@@ -51,3 +51,17 @@ void loop()
     }
 }
 ```
+
+
+Other Useful Information
+------------------------
+
+When declaring your ToggleButton object, you can also choose a currentState to start in. This means you could have the toggle start in the "on" position. The default is false (off).
+```cpp
+ToggleButton btn(3, HIGH, true);
+```
+
+When checking the button's input and flipping the state, the input must be [debounced](http://en.wikipedia.org/wiki/Debounce#Contact_bounce "debounced"). The default duration for debouncing is 250ms. I found this to be a pretty decent default, but you can set it like so:
+```cpp
+btn.setDebounce(500); // Half-second debounce delay
+```
