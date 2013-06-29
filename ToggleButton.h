@@ -5,17 +5,22 @@
 #ifndef ToggleButton_h
 #define ToggleButton_h
 
+#include "Arduino.h"
+
 class ToggleButton
 {
     public:
-        Test(int);
+        ToggleButton(int, int, bool beginState = false);
         void setDebounce(int);
+        void checkButton(void);
         bool currentState;
     
     private:
         void flipState(void);
-        int readButton(void);
+        int activeState;
         int debounce;
         int button;
         
-}
+};
+
+#endif
