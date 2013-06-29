@@ -10,6 +10,11 @@ Overview
 ToggleButton provides a quick, clean way to use a basic NO push button as an on/off toggle switch with the Arduino. It aims to be lean, but with enough flexibility to fit most use cases.
 
 
+Installation
+------------
+
+Just clone the repository into your sketchbook. The library should then be available like the example below.
+
 Usage
 -----
 
@@ -17,7 +22,7 @@ Usage
 // ToggleButton example sketch
 // Toggles an LED on/off
 
-#include "ToggleButton/ToggleButton.h"
+#include "ToggleButton.h"
 
 // LED on digital pin 2
 const int LED = 2;
